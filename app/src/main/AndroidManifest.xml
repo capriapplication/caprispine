@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.caprispine.caprispine">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.AdminDashboardActivity" />
+        <activity android:name=".activity.PatientListActivity" />
+        <activity android:name=".activity.PatientAssesmentActivity" />
+        <activity android:name=".activity.assessment.ChiefComplaintActivity" />
+        <activity android:name=".activity.assessment.BodyChartActivity" />
+        <activity android:name=".activity.assessment.CaseNewsActivity" />
+        <activity android:name=".activity.assessment.HistoryActivity" />
+        <activity android:name=".activity.assessment.InvestigationActivity" />
+        <activity android:name=".activity.assessment.MedicalActivity" />
+        <activity android:name=".activity.assessment.NDTPActivity" />
+        <activity android:name=".activity.assessment.NeuroActivity" />
+        <activity android:name=".activity.assessment.PainActivity" />
+        <activity android:name=".activity.assessment.PhotoVideoActivity" />
+        <activity android:name=".activity.assessment.PhysioTheraputicActivity" />
+        <activity android:name=".activity.assessment.PhysicalActivity" />
+        <activity android:name=".activity.assessment.ProgressNotesActivity" />
+        <activity android:name=".activity.assessment.RemarkActivity" />
+        <activity android:name=".activity.assessment.SensoryActivity" />
+        <activity android:name=".activity.assessment.SpecialExamActivity" />
+        <activity android:name=".activity.assessment.TreatmentGivenActivity" />
+        <activity android:name=".activity.assessment.TreatmentPlanActivity" />
+        <activity android:name=".activity.assessment.add.AddChiefComplaintActivity" />
+        <activity android:name=".activity.assessment.add.AddHistoryActivity" />
+        <activity android:name=".activity.assessment.add.AddPainActivity" />
+        <activity android:name=".activity.assessment.add.AddPhysicalActivity" />
+        <activity android:name=".activity.assessment.add.AddSensoryExamActivity" />
+        <activity android:name=".activity.assessment.add.AddNeuroExamActivity" />
+        <activity android:name=".activity.assessment.add.AddNdtpActivity" />
+        <activity android:name=".activity.assessment.add.AddSpecialTestActivity" />
+        <activity android:name=".activity.assessment.add.AddInvestigationActivity" />
+        <activity android:name=".activity.assessment.add.AddPhysioTheraputicActivity" />
+        <activity android:name=".activity.assessment.add.AddTreatmentPlanActivity" />
+        <activity android:name=".activity.assessment.add.AddTreatmentGivenActivity" />
+        <activity android:name=".activity.assessment.add.AddCaseNoteActivity" />
+        <activity android:name=".activity.assessment.add.AddMedicalActivity" />
+        <activity android:name=".activity.assessment.add.AddRemarkNoteActivity" />
+        <activity android:name=".activity.assessment.add.AddProgressNoteActivity" />
+        <activity android:name=".activity.assessment.MotorExamActivity" />
+        <activity android:name=".activity.assessment.add.motor.AddCombinedSpineActivity" />
+        <activity android:name=".activity.assessment.add.motor.AddHipActivity" />
+        <activity android:name=".activity.assessment.add.motor.AddKneeActivity" />
+        <activity android:name=".activity.assessment.add.motor.AddAnkleActivity" />
+        <activity android:name=".activity.assessment.add.motor.AddCervicalSpineActivity" />
+        <activity android:name=".activity.assessment.add.motor.AddElbowActivity" />
+        <activity android:name=".activity.assessment.add.motor.AddFingerActivity" />
+        <activity android:name=".activity.assessment.add.motor.AddForeArmActivity" />
+        <activity android:name=".activity.assessment.add.motor.AddLumbarActivity" />
+        <activity android:name=".activity.assessment.add.motor.AddSacrollicActivity" />
+        <activity android:name=".activity.assessment.add.motor.AddShoulderActivity" />
+        <activity android:name=".activity.assessment.add.motor.AddThoraccicActivity" />
+        <activity android:name=".activity.assessment.add.motor.AddToesActivity" />
+        <activity android:name=".activity.assessment.add.motor.AddWristActivity" />
+        <activity android:name=".activity.MoterExamViewActivity" />
+        <activity android:name=".activity.UpdatePatientActivity" />
+        <activity android:name=".activity.CreateTherapistActivity" />
+        <activity android:name=".activity.CreateStaffActivity" />
+        <activity android:name=".activity.ReportActivity" />
+        <activity android:name=".activity.PatientAmountActivity" />
+        <activity android:name=".activity.ViewPatientTransactionsActivity" />
+        <activity android:name=".activity.AddExpenseActivity" />
+        <activity android:name=".activity.BranchListActivity" />
+        <activity android:name=".activity.AddBranchActivity" />
+        <activity android:name=".activity.TreatmentListActivity" />
+        <activity android:name=".activity.AddTreatmentPackagerActivity" />
+        <activity android:name=".activity.TherapistActivity" />
+        <activity android:name=".activity.ManageTherapistActivity" />
+        <activity android:name=".activity.StaffActivity" />
+        <activity android:name=".activity.ManageStaffActivity" />
+        <activity
+            android:name=".activity.SignActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.ViewReportActivity" />
+        <activity android:name=".activity.report.ViewIncomeReportActivity" />
+        <activity android:name=".activity.report.ViewIncomeTreatmentwiseReport" />
+        <activity android:name=".activity.ViewIncomeTherapistWise" />
+        <activity android:name=".activity.report.IncomePatientWise" />
+        <activity android:name=".activity.report.ViewPatientWalletReportActivity" />
+        <activity android:name=".activity.report.IncomeFromPatientWalletActivity" />
+        <activity android:name=".activity.report.NotesPrintActivity" />
+        <activity android:name=".activity.report.ViewCaseReportActivity" />
+        <activity android:name=".activity.report.IncomeReportPrintActivity" />
+        <activity android:name=".activity.report.ViewIncomeExpensetReport" />
+        <activity android:name=".activity.report.ViewExpenseReport" />
+        <activity android:name=".activity.CreatePatientActivity" />
+        <activity android:name=".activity.assessment.FAReportActivity" />
+        <activity android:name=".activity.assessment.ProblemListActivity" />
+        <activity android:name=".activity.assessment.ProblemQuestionActivity" />
+        <activity android:name=".activity.assessment.AddBodyChartActivity" />
+        <activity android:name=".activity.PatientDashBoardActivity" />
+        <activity android:name=".activity.QuestionaireActivity" />
+        <activity android:name=".activity.HabitHistoryActivity" />
+        <activity android:name=".activity.MultipleFileSelectActivity" />
+        <activity android:name=".activity.BookAppointmentActivity" />
+        <activity android:name=".activity.assessment.BodyChartViewActivity" />
+        <activity android:name=".activity.assessment.ShowPatientMediaActivity" />
+        <activity android:name=".activity.TherapistDashboardActivity" />
+        <activity android:name=".activity.StaffDashboardActivity" />
+        <activity android:name=".activity.TherapistPatientActivity" />
+        <activity android:name=".activity.AllocatePatientsActivity" />
+        <activity android:name=".activity.TherapistPatientListActivity" />
+        <activity android:name=".testing.GraphTesting" />
+        <activity android:name=".activity.AllUsersChatActivity" />
+        <activity android:name=".activity.SearchUserActivity" />
+        <activity android:name=".activity.AppointmentActivity" />
+        <activity android:name=".activity.ManageAppointmentActivity" />
+
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activity.ChatActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.caprispine.caprispine.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".testing.TestingAvtivity"></activity>
+    </application>
+
+</manifest>

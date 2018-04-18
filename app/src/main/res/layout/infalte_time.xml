@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+        android:padding="5dp"
+        android:textColor="#248666"
+        />
+    <ImageView
+        android:id="@+id/tv_time_cross"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:text="time"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:textColor="#248666"
+        />
+
+
+</LinearLayout>

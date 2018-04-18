@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.caprispine.caprispine.activity.assessment.add.AddNeuroExamActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="Add Neuro Exam"></android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Glasgow Coma Scale"
+                    android:textSize="20dp"></TextView>
+
+                <LinearLayout
+                    android:id="@+id/linlout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/linlout1hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Eye Opening:"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_glass_eye"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout2hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Verbal Response"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_glass_verbal"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout3hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Motor Response"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_glass_motor"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Co-ordination Test"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:id="@+id/linlout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Finger to Nose"
+                        android:textSize="18dp"
+                        android:textStyle="bold"></TextView>
+                    <!--<LinearLayout
+                        android:id="@+id/linlout6_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/speedperf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Speed at which the Activity is Performed"
+                            android:layout_weight="1.5"
+                            android:textSize="20dp"
+                            ></TextView>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            />
+                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:id="@+id/linlout7_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/Description9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Time Taken"
+                            android:textSize="15dp"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/et_fn_time_taken"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout7_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/Description10"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1."
+                            android:gravity="center_vertical"
+                            android:text="Speed"
+                            android:textSize="15dp"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/et_fn_speed"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linlout7_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/Description11"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Error Made"
+                            android:textSize="15dp"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/et_fn_error"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aternating Supination  "
+                        android:textSize="18dp"
+                        android:textStyle="bold"></TextView>
+
+
+                    <LinearLayout
+                        android:id="@+id/linlout8_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/Description12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Time Taken"
+                            android:textSize="15dp"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/et_al_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout8_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/Description13"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Speed"
+                            android:textSize="15sp"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/et_al_speed"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout8_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/Description14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Error Made"
+                            android:textSize="15dp"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/et_al_error"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heel to Shin"
+                        android:textSize="18dp"
+                        android:textStyle="bold"></TextView>
+
+                    <LinearLayout
+                        android:id="@+id/linlout9_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/Description15"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Time Taken"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/et_hs_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout9_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/Description16"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Speed"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/et_hs_speed"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout9_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/Description17"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Error Made"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/et_hs_error"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textview78"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Gait and Balance Testings"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dynamic Gait Index"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:id="@+id/linlout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/linlout4hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Gait Level Surface :"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner7_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout5hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Change in Gait Speed:"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner7_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout6hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Gait With Horizontal Head Turns :"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner7_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout8hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Gait With Vertical Head Turns:"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner7_4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout99999hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Gait and Pivot Turn :"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner7_5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout99hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Step Over Obstacle:"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner7_6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout999hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Step Around Obstacles:"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner7_7"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout9hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Steps:"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner7_8"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout5_9"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/Lateral_cutaneous5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Balance and Movement Analyser"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/et_balance_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="left" />
+
+                        <EditText
+                            android:id="@+id/et_balance_right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="right" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textview7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Functional Testing"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modified Barthel Index-Info"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:id="@+id/linlout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/linlout100hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Bowels (Preceding Week):"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner8_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout10hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Bladder (Preceding Week):"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner8_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout11hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Grooming (Preceding 24 - 48 hours):"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner8_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout12hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Toilet use:"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner8_4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout13hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Feeding:"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner8_5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout14hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Transfer (from bed to chair and back):"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner8_6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout15ori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Mobility :"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner8_7"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout16hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Dressing:"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner8_8"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout17hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Stairs:"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner8_9"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linlout18hori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="Bathing:"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner8_10"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:entries="@array/neuro_of_pain"
+                            android:spinnerMode="dropdown"></Spinner>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:text="SAVE" />
+</LinearLayout>

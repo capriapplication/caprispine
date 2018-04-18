@@ -1,0 +1,191 @@
+<resources>
+    <string name="app_name">CapriSpine</string>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <string-array name="visit_type">
+        <item>Opd</item>
+        <item>Home Visit</item>
+        <item>Online Paid Consultation</item>
+        <item>Online Free Consultation</item>
+    </string-array>
+
+    <string-array name="reference_type">
+        <item>Consultant</item>
+        <item>Friend or Relative</item>
+        <item>NewsPaper</item>
+        <item>Website</item>
+        <item>Any Other</item>
+        <item>Social Media</item>
+    </string-array>
+
+
+    <string name="book_appointment">Book Appointment</string>
+    <string name="appointments">Appointments</string>
+    <string name="health_summary">Health Summary</string>
+    <string name="chat">Chat</string>
+    <string name="d_billing">Billing</string>
+    <string name="message">Message</string>
+    <string name="d_patients">My Patients</string>
+    <string name="d_schedule">Schedule</string>
+    <string name="d_staff">Staff</string>
+    <string name="d_report">Report</string>
+    <string name="d_message">Message</string>
+    <string name="d_expense">Expense</string>
+    <string name="d_invoice">Invoice</string>
+    <string name="create_clinic">Create a new clinic here</string>
+    <string name="add_clinic">Create your clinic</string>
+    <string name="btn_save">save</string>
+
+
+    <string-array name="menu_myclinic_patient">
+        <!--<item>Examination</item>-->
+        <item>Chief Complaint</item>
+        <item>History</item>
+        <item>Pain Examination</item>
+        <item>Physical Examination</item>
+        <item>Motor Examination</item>
+        <item>Sensory Examination</item>
+        <item>Neurological Examination</item>
+        <item>NDT,NTP Examination</item>
+        <item>Special Examination</item>
+        <item>ADL Examination</item>
+        <item>Investigation</item>
+        <item>Physiotherapeutic Diagnosis</item>
+        <item>Medical Diagnosis</item>
+        <item>Treatment Plan</item>
+        <item>Treatment Given</item>
+        <item>Case Notes</item>
+        <item>Progress Notes</item>
+        <item>Remarks</item>
+        <item>Body Chart</item>
+        <item>Photo/Video</item>
+
+    </string-array>
+
+
+    <string-array name="quantity_of_item">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="pay_status">
+        <item>Unpaid</item>
+        <item>Paid</item>
+
+    </string-array>
+    <string-array name="pay_mode">
+        <item>cash</item>
+        <item>online</item>
+        <item>cheque</item>
+
+    </string-array>
+
+    <string-array name="severity_of_pain">
+        <item>Intensity of Pain</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="pressure_pain_threshold">
+        <item>Pain Threshold (Pressure)</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="diurnal_variations">
+        <item>Morning</item>
+        <item>Afternoon</item>
+        <item>Evening</item>
+        <item>Night</item>
+        <item>No Specific pattern</item>
+    </string-array>
+    <string-array name="built_of_the_patient">
+        <item>Ectomorph</item>
+        <item>Mesomorph</item>
+        <item>Endomorph</item>
+    </string-array>
+    <string-array name="head_tone_of_the_motor">
+        <item>Select</item>
+        <item>Normal</item>
+        <item>Flaccid</item>
+        <item>Spastic</item>
+        <item>Rigid</item>
+    </string-array>
+    <string-array name="head_power_of_the_motor">
+        <item>--</item>
+        <item>5</item>
+        <item>5-</item>
+        <item>4+</item>
+        <item>4</item>
+        <item>4-</item>
+        <item>3+</item>
+        <item>3</item>
+        <item>3-</item>
+        <item>2+</item>
+        <item>2</item>
+        <item>2-</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="neuro_of_pain">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="neuro_glass_eye">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="neuro_glass_verbal">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="neuro_glass_motor">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="treatment_type">
+        <item>OPD</item>
+        <item>Home Visit</item>
+        <item>Online (Paid)</item>
+        <item>Online (Free)</item>
+    </string-array>
+
+
+</resources>

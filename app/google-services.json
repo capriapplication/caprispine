@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "68489052402",
+    "firebase_url": "https://caprispine-cc825.firebaseio.com",
+    "project_id": "caprispine-cc825",
+    "storage_bucket": "caprispine-cc825.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68489052402:android:6abf2acebf6f8388",
+        "android_client_info": {
+          "package_name": "com.caprispine.caprispine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68489052402-r444l09e55hsfadjlgpr21pb09akfl95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.caprispine.caprispine",
+            "certificate_hash": "728aad18cc8dd9985b09a679fb5c0c0b81a1ccc6"
+          }
+        },
+        {
+          "client_id": "68489052402-60it79g1ctdk6a6733tj688t33lhjncn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6-NTKexO8Kh_35YccxI-qg62zGxmna8U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68489052402-60it79g1ctdk6a6733tj688t33lhjncn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

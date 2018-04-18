@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_windows"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/Movement"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="Movement"
+                    android:textSize="17sp"></TextView>
+
+                <TextView
+                    android:id="@+id/Tone"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="Tone"
+                    android:textSize="17sp"></TextView>
+
+                <TextView
+                    android:id="@+id/Power"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="Power"
+                    android:textSize="17sp"></TextView>
+
+                <TextView
+                    android:id="@+id/Rom"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="ROM"
+                    android:textSize="17sp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:orientation="vertical"
+                    android:weightSum="7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="Flexion"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="Extension"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="External Rotation"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="Internal Rotation"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="Abduction"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="Adduction"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="7">
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/head_tone_of_the_motor"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/head_tone_of_the_motor"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spinner3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/head_tone_of_the_motor"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spinner4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/head_tone_of_the_motor"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spinner5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/head_tone_of_the_motor"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spinner6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/head_tone_of_the_motor"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spinner7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/head_tone_of_the_motor"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"
+                        android:visibility="gone"></Spinner>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="7">
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/head_tone_of_the_motor"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"
+                        android:visibility="gone"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spinner8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/head_power_of_the_motor"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spinner9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/head_power_of_the_motor"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spinner10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/head_power_of_the_motor"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spinner11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/head_power_of_the_motor"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spinner12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/head_power_of_the_motor"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spinner13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/head_power_of_the_motor"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"></Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="7">
+
+                    <EditText
+                        android:id="@+id/edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_name"
+                        android:gravity="center"
+                        android:hint="Degree"
+                        android:imeOptions="actionNext"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/edtxt_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_name"
+                        android:gravity="center"
+                        android:hint="Degree"
+                        android:imeOptions="actionNext" />
+
+
+                    <EditText
+                        android:id="@+id/edtxt_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:hint="Degree"
+                        android:imeOptions="actionNext" />
+
+
+                    <EditText
+                        android:id="@+id/edtxt_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:hint="Degree"
+                        android:imeOptions="actionNext" />
+
+                    <EditText
+                        android:id="@+id/edtxt_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_name"
+                        android:gravity="center"
+                        android:hint="Degree"
+                        android:imeOptions="actionNext" />
+
+                    <EditText
+                        android:id="@+id/edtxt_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:hint="Degree"
+                        android:imeOptions="actionNext" />
+
+                    <EditText
+                        android:id="@+id/edtxt_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:hint="Degree"
+                        android:imeOptions="actionNext" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
