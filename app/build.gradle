@@ -57,5 +57,8 @@ dependencies {
     compile 'com.google.firebase:firebase-firestore:11.8.0'
     compile 'com.google.guava:guava:22.0-android'
     compile 'org.adw.library:discrete-seekbar:1.0.1'
+    def appCenterSdkVersion = '1.4.0'
+    compile "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    compile "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
 }
 apply plugin: 'com.google.gms.google-services'

@@ -23,6 +23,9 @@ import com.caprispine.caprispine.pojo.user.PatientPOJO;
 import com.caprispine.caprispine.pojo.user.StaffPOJO;
 import com.caprispine.caprispine.pojo.user.TherapistPOJO;
 import com.google.gson.Gson;
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -40,6 +43,10 @@ public class SplashActivity extends AppCompatActivity {
         if (checkAndRequestPermissions()) {
             makesplash();
         }
+
+        AppCenter.start(getApplication(), "e1ae8e7e-bfdd-493e-8e3f-fead9b56086e",
+                Analytics.class, Crashes.class);
+        AppCenter.start(getApplication(), "e1ae8e7e-bfdd-493e-8e3f-fead9b56086e", Analytics.class, Crashes.class);
     }
 
     @Override
